@@ -4,11 +4,13 @@ import SimpleLightbox from "simplelightbox";
 
 import "simplelightbox/dist/simple-lightbox.min.css";
 import simpleLightbox from 'simplelightbox';
-// Change code below this line
 
 console.log(galleryItems);
 
 const galleryEl = document.querySelector(".gallery");
+// galleryEl.style.display = "flex";
+// galleryEl.style.flex-wrap = "wrap";
+// galleryEl.style.gap = "30px";
 
 const createGaleryItem = (galleryItems) => {
  return galleryItems.map(({ preview, original, description}) => {
